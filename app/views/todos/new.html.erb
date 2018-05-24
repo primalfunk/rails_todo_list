@@ -1,0 +1,10 @@
+<h1>New Todo</h1>
+<%= form_for @todos do |f| %>
+  <%= f.label :desc %>
+  <%= f.text_field :desc %>
+
+  <%= f.label :due_by %>
+  <%= f.text_field :due_by %>
+
+  <%= f.submit %>
+<% end %>
